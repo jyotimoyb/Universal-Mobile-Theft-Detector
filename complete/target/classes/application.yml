@@ -1,0 +1,33 @@
+# ===================================================================
+# Spring Boot configuration.
+#
+# This configuration is used for unit/integration tests.
+# ===================================================================
+
+# ===================================================================
+# Standard Spring Boot properties.
+# Full reference is available at:
+# http://docs.spring.io/spring-boot/docs/current/reference/html/common-application-properties.html
+# ===================================================================
+
+
+spring:
+    application:
+        name: ADCDemoMongoDB
+    data:
+        mongodb:
+               uri: mongodb://localhost/ADC
+    cloud:
+    consul:
+      host: localhost
+      port: 8500
+    
+    
+server:
+   port: 8092  
+
+security:
+    basic:
+        enabled: false
+
+
